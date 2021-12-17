@@ -5,4 +5,6 @@
 - ReactDOM.render()에서 render의 의미는 React element를 가지고 HTML로 만들어 배치한다는 것이다. 사용자에게 보여준다.
 - 바닐라JS에서는 HTML을 먼저 만들고, 그걸 JavaScript로 가져와서 HTML을 수정하는 방식이였다. 
 - ReactJS에서는 모든것이 JavaScript로써 시작한다. 유저에게 보여질 내용을 컨트롤할수 있다는 뜻이다.
-- 
+- JSX는 JavaScript를 확장한 문법이다.
+- Babel을 통해 JSX로 적은 코드를 브라우저가 이해할수있는 형태로 바꿔줘야한다.
+- <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
