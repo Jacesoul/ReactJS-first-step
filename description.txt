@@ -1,0 +1,2 @@
+### Why ReactJS
+- ReactJS는 UI를 interactive하게 만들어준다.
