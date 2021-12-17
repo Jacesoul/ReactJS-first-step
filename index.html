@@ -15,22 +15,21 @@
   <script type="text/babel">
     const root = document.getElementById("root");
     // JSX
-    const Title = (
+    const Title = () => (
       <h3 id="title" onMouseEnter={() => console.log("Mouse enter")}>
         Hello I'm a title
       </h3>
     );
-    /*
-    const h3 = React.createElement(
-      "h3",
-      {
-        id: "title",
-        onMouseEnter: () => console.log("Mouse enter"),
-      },
-      "Hello I'm a h3"
-    );
+    /* 위의 코드와 동일하다. 
+    function Title() {
+      return (
+        <h3 id="title" onMouseEnter={() => console.log("Mouse enter")}>
+          Hello I'm a title
+        </h3>
+      );
+    }
     */
-    const Button = (
+    const Button = () => (
       <button
         style={{
           color: "tomato",
@@ -40,7 +39,12 @@
         Click Me!
       </button>
     );
-    const container = React.createElement("div", null, [Title, Button]);
-    ReactDOM.render(container, root); // h3와 btn의 element를 root div안에서 보여주라는 뜻
+    const Container = () => (
+      <div>
+        <Title />
+        <Button />
+      </div>
+    );
+    ReactDOM.render(<Container />, root); // h3와 btn의 element를 root div안에서 보여주라는 뜻
   </script>
 </html>
