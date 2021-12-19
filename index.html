@@ -14,37 +14,20 @@
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   <script type="text/babel">
     const root = document.getElementById("root");
-    // JSX
-    const Title = () => (
-      <h3 id="title" onMouseEnter={() => console.log("Mouse enter")}>
-        Hello I'm a title
-      </h3>
-    );
-    /* 위의 코드와 동일하다. 
-    function Title() {
-      return (
-        <h3 id="title" onMouseEnter={() => console.log("Mouse enter")}>
-          Hello I'm a title
-        </h3>
-      );
+    let counter = 0;
+    function countUp() {
+      counter += 1;
+      render();
     }
-    */
-    const Button = () => (
-      <button
-        style={{
-          color: "tomato",
-        }}
-        onClick={() => console.log("I'm clicked")}
-      >
-        Click Me!
-      </button>
-    );
+    function render() {
+      ReactDOM.render(<Container />, root);
+    }
     const Container = () => (
       <div>
-        <Title />
-        <Button />
+        <h3>Total Click : {counter}</h3>
+        <button onClick={countUp}>Click Me!</button>
       </div>
     );
-    ReactDOM.render(<Container />, root); // h3와 btn의 element를 root div안에서 보여주라는 뜻
+    render();
   </script>
 </html>

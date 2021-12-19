@@ -8,3 +8,7 @@
 - JSX는 JavaScript를 확장한 문법이다.
 - Babel을 통해 JSX로 적은 코드를 브라우저가 이해할수있는 형태로 바꿔줘야한다.
 - <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+### STATE
+- state는 기본적으로 데이터가 저장되는 곳이다. 
+- ReactJS는 이전에 렌더링되 컴포넌트는 어떤거였는지 확인하면서 다음에 렌더링될 컴포넌트는 어떤지를 본다. 그다음 그 둘중 다른부분만 파악한다. 오로지 바뀐 부분만 업데이트 해주면 된다. 그 말은 곧 굉장히 interactive한 어플을 만들수 있다는 뜻이다.
