@@ -15,15 +15,30 @@
   <script type="text/babel">
     const root = document.getElementById("root");
     function App() {
-      const [counter, setCounter] = React.useState(0);
-      const onClick = () => {
-        // setCounter(counter + 1); 아래쪽의 코드가 더 안전하다.
-        setCounter((crrent) => current + 1); // 현재 state를 기반으로 다음 state를 계산을 하고 싶다면 이렇게 함수를 이용한다.
+      const [minutes, setMinutes] = React.useState();
+      const onChange = (event) => {
+        setMinutes(event.target.value);
       };
+
       return (
         <div>
-          <h3>Total Click : {counter}</h3>
-          <button onClick={onClick}>Click Me!</button>
+          <h1>Super Converter</h1>
+          <label htmlFor="minutes">Minutes</label>
+          <input
+            id="minutes"
+            value={minutes}
+            placeholder="Minutes"
+            type="number"
+            onChange={onChange}
+          />
+          <h4>You want to convert {minutes}</h4>
+          <label htmlFor="hours">Hours</label>
+          <input
+            id="hours"
+            value={minutes / 60}
+            placeholder="Hours"
+            type="number"
+          />
         </div>
       );
     }

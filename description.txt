@@ -22,3 +22,4 @@ const [one, two, three] = x;
 - modifier함수는 값을 받아서 그 값으로 업데이트하라고 리랜더링을 일으킨다.
 - state가 바뀌면 새로운 값을 가지고 React가 전체 컴포넌트를 re-rendering해준다.
 - state를 바꾸는 2가지 방법이 있는데 첫번째 방법은 modifier를 이용해서 우리가 원하는 값을 넣어준다. 또 하나는 이전값을 이용해서 현재값을 계산하는 것이다.
+- JSX는 HTML과 비슷하지만 다른 점 몇가지를 기억해야한다.(class사용 X => className 사용, for 사용 X => htmlFor 사용)
