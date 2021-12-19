@@ -17,7 +17,8 @@
     function App() {
       const [counter, setCounter] = React.useState(0);
       const onClick = () => {
-        setCounter(counter + 1);
+        // setCounter(counter + 1); 아래쪽의 코드가 더 안전하다.
+        setCounter((crrent) => current + 1); // 현재 state를 기반으로 다음 state를 계산을 하고 싶다면 이렇게 함수를 이용한다.
       };
       return (
         <div>
