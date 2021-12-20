@@ -23,3 +23,9 @@ const [one, two, three] = x;
 - state가 바뀌면 새로운 값을 가지고 React가 전체 컴포넌트를 re-rendering해준다.
 - state를 바꾸는 2가지 방법이 있는데 첫번째 방법은 modifier를 이용해서 우리가 원하는 값을 넣어준다. 또 하나는 이전값을 이용해서 현재값을 계산하는 것이다.
 - JSX는 HTML과 비슷하지만 다른 점 몇가지를 기억해야한다.(class사용 X => className 사용, for 사용 X => htmlFor 사용)
+
+### PROPS
+- Props는 부모 컴포넌트로부터 자식 컴포넌트에 데이터를 보낼수있게 해주는 방법이다.
+- Component(컴포넌트)라고 하는건 단지 JSX를 반환하는 function(함수)일뿐이다.
+- 모든 컴포넌트들은 괄호로 argument를 받는다. 
+- ReactJS는 자동으로 컴포넌트에 넣은 property(prop)들을 하나의 object안으로 집어넣는다.그리고 이 object는 컴포넌트의 첫번째 인지로 주어진다. props는 컴포턴트가 받는 첫번째이자 유일한 인자이다. 
