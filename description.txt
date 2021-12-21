@@ -33,3 +33,6 @@ const [one, two, three] = x;
 - 부모 컴포넌트가 state(상태) 변경을 겪을때 안에있는 모든 자식 컴포넌트는 새롭게 그려진다.
 - React Meomo는 리액트에게 이 컴포넌트가 다시 그려지는것을 원치않는다고 말해줄수있다.
 - 만약 부모 컴포넌트가 어떤 state라도 변경이 있다면 모든 자식들은 다시 그려질(re-render)것이다. 이게 추후에 어플리케이션이 느려지는 원인이 될수있다.
+- PropType은 어떤 타입의 prop을 받고 있는지를 체크해준다.
+- <script src="https://unpkg.com/prop-types@15.7.2/prop-types.js"></script>
+- PropTypes는 각기 다른 타입들을 검사하는게 가능하다.
